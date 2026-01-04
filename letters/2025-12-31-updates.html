@@ -4,6 +4,37 @@
     <meta charset="UTF-8">
     <title>Updates ✉️</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .back-archive {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            padding: 12px 18px;
+            background-color: #0d1b2a;
+            color: #ffffff;
+            font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+            border-radius: 999px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .back-archive:hover {
+            background-color: #1b2a47;
+            transform: translateY(-50%) scale(1.05);
+        }
+
+        .back-archive.top {
+            top: 20px;
+        }
+
+        .back-archive.bottom {
+            bottom: 20px;
+        }
+    </style>
 </head>
 
 <body style="margin:0; padding:0; background-color:#2d1f4d;">
@@ -11,8 +42,7 @@
         a, a:visited { color: #ff66cc !important; text-decoration:none !important; }
     </style>
 
-    <a href="../index.html" class="back-archive top">← Archive</a>
-    <a href="../index.html" class="back-archive bottom">← Archive</a>
+    <a href="../index.html" class="back-archive">← Archive</a>
 
     <h2> Hello 👋🏻 </h2>
 

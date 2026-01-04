@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Letters Archive ✉️</title>
@@ -7,29 +7,54 @@
 
     <style>
     body {
-      background-color: #2d1f4d;
-      color: #f2e9ff;
+      background-color: #0d1b2a; /* deep navy */
+      color: #ffffff; /* white text */
       font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
       margin: 0;
       padding: 40px;
     }
 
+    h1, h3 {
+      color: #ffffff; /* ensure headings are white */
+    }
+
     a {
-      color: #ff66cc;
+      color: #00bfff; /* bright cyan link */
       text-decoration: none;
     }
 
+    a:hover {
+      text-decoration: underline;
+    }
+
     .letter {
-      background: #3b2a63;
-      border-left: 4px solid #c74cff;
       padding: 16px;
       margin-bottom: 16px;
       border-radius: 8px;
+      color: #ffffff;
+      transition: transform 0.2s;
+    }
+
+    .letter:hover {
+      transform: translateY(-2px);
+    }
+
+    /* alternating shades of blue */
+    .letter:nth-child(odd) {
+      background-color: #1b2a47; /* dark blue */
+      border-left: 4px solid #3d5a80;
+    }
+
+    .letter:nth-child(even) {
+      background-color: #27496d; /* medium blue */
+      border-left: 4px solid #56a3bf;
     }
 
     .date {
       font-size: 12px;
-      opacity: 0.8;
+      opacity: 0.7;
+      margin-bottom: 6px;
+      color: #d0e7ff; /* light blue for date */
     }
   </style>
 </head>
@@ -39,50 +64,47 @@
     <h1>Letters Archive</h1>
     <p>All the letters here, sorted by date</p>
 
-    <div class ="letter">
-        <div class="date"> Oct 20, 2025</div>
-        <a href="letters/2025-10-20-starting_the_journey.html">
-            <h3> Starting the journey ✉️</h3>
+    <div class="letter">
+        <div class="date"> Dec 31, 2025</div>
+        <a href="letters/2025-12-31-updates.html">
+            <h3> Updates ✉️</h3>
         </a>
     </div>
-
-    <div class ="letter">
-        <div class="date"> Oct 20, 2025</div>
-        <a href="letters/2025-10-27-from_benito_to_ozzy.html">
-            <h3> From Benito Mussolini to Ozzy Osbourne, first Halloween special</h3>
-        </a>
-    </div>
-
-    <div class ="letter">
-        <div class="date"> Oct 20, 2025</div>
-        <a href="letters/2025-11-11-second_halloween_special.html">
-            <h3> Second Halloween special</h3>
-        </a>
-    </div>
-
-    <div class ="letter">
-        <div class="date"> Oct 20, 2025</div>
-        <a href="letters/2025-11-18-voiceover_narration.html">
-            <h3> Voiceover narration</h3>
-        </a>
-    </div>
-
-    <div class ="letter">
-        <div class="date"> Oct 20, 2025</div>
+    
+    <div class="letter">
+        <div class="date"> Nov 26, 2025</div>
         <a href="letters/2025-11-26-technologia.html">
             <h3> Technologia! 🤖</h3>
         </a>
     </div>
 
-    <div class ="letter">
-        <div class="date"> Oct 20, 2025</div>
-        <a href="letters/2025-12-31-updates.html">
-            <h3> Updates ✉️</h3>
+    <div class="letter">
+        <div class="date"> Nov 18, 2025</div>
+        <a href="letters/2025-11-18-voiceover_narration.html">
+            <h3> Voiceover narration</h3>
         </a>
     </div>
 
+    <div class="letter">
+        <div class="date"> Nov 11, 2025</div>
+        <a href="letters/2025-11-11-second_halloween_special.html">
+            <h3> Second Halloween special</h3>
+        </a>
+    </div>
 
+    <div class="letter">
+        <div class="date"> Oct 27, 2025</div>
+        <a href="letters/2025-10-27-from_benito_to_ozzy.html">
+            <h3> From Benito Mussolini to Ozzy Osbourne, first Halloween special</h3>
+        </a>
+    </div>
 
+    <div class="letter">
+        <div class="date"> Oct 20, 2025</div>
+        <a href="letters/2025-10-20-starting_the_journey.html">
+            <h3> Starting the journey ✉️</h3>
+        </a>
+    </div>
 
 </body>
 </html>

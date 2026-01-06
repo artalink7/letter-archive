@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Letters Archive ✉️</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Letters Archive ✉️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
+  <style>
     body {
       background-color: #0d1b2a; /* deep navy */
       color: #ffffff; /* white text */
@@ -25,6 +25,51 @@
 
     a:hover {
       text-decoration: underline;
+    }
+
+    .cta-container {
+      display: flex;
+      gap: 20px;
+      margin: 32px 0;
+    }
+
+    .cta-box {
+      flex: 1;
+      background: #1b263b;
+      border-left: 4px solid #4da3ff;
+      padding: 16px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .cta-box p {
+      margin: 0;
+      font-size: 14px;
+      color: #f2e9ff;
+    }
+
+    .cta-box a {
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: underline;
+    }
+
+    .cta-title {
+      display: block;
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 6px;
+      color: #ffffff;
+    }
+
+    .cta-box:nth-child(2) {
+      border-left-color: #1db954;
+    }
+
+    @media (max-width: 700px) {
+      .cta-container {
+        flex-direction: column;
+      }
     }
 
     .letter {
@@ -62,7 +107,30 @@
 <body>
 
     <h1>Letters Archive</h1>
-    <p>All the letters here, sorted by date</p>
+    <p>All the letters here, sorted by date.</p>
+
+    <div class="cta-container">
+      <div class="cta-box">
+        <p>
+          <span class="cta-title"> Want to receive future letters?</span><br>
+          <a href ="https://docs.google.com/forms/d/e/1FAIpQLSeWdu_n4H-kftTI8Wc5ikL3ecR5eCF0OL10B75_JWr-71LzZg/viewform?usp=dialog"
+             target="_blank">
+             Subscribe or unsubscribe here
+          </a> 
+        </p>
+      </div>
+
+      <div class="cta-box">
+        <p>
+          <span class="cta-title">🎵 All song picks in one place</span><br>
+          <a href ="https://open.spotify.com/playlist/2ZJXlZ8N6oT9XMHlQp9xuC?si=d2174f1199e64bf6"
+             target="_blank">
+            Listen on Spotify
+          </a>
+        </p>
+      </div>
+
+    </div>
 
     <div class="letter">
         <div class="date"> Dec 31, 2025</div>
